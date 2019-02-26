@@ -1,0 +1,21 @@
+.welcome_message {
+    font-family: "Courier New";
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 1);
+}
+
+.welcome_text {
+    color:white;
+    position:absolute;
+    text-align: center;
+    left: 50%;
+    top: 40%;
+    transform: translateY(-50%);
+    transform: translateX(-50%);
+}
