@@ -5,15 +5,27 @@
     <script src="overlay.js"></script>
     <title>Welcome</title>
 </head>
-<body>
-    <div class="welcome_message" id="overlay" onclick="hide_overlay()">
+<body onload="startPage()">
+
+    <div class="welcome_message" id="overlay" onclick="hideOverlay()">
         <div class="welcome_text">
             <h1>Welcome to my Website</h1>
             <h2>Click to enter</h2>
         </div>
     </div>
-    <div class="body_text">
-        <h1> welcome </h1>
-    </div>
+
+    <div class="actual_page" id="underlay">
+        <div class="navbar">
+            <div class="navlink">
+                <a href="about.html">About Me</a>
+            </div>
+            <div class="navlink">
+                <a href="projects.html">Projects</a>
+            </div>
+        </div>
+        <div class="body_text">
+            <h1> welcome </h1>
+        </div>
+   </div>
 </body>
 </html>
