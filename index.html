@@ -1,31 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="index_style.css">
-    <script src="overlay.js"></script>
+    <link rel="stylesheet" href="styles/index_style.css">
+    <script src="javascript/overlay.js"></script>
+    <script src="jQuery.js"></script>
+    <script src="smoothState.js"></script>
     <title>Welcome</title>
 </head>
-<body onload="startPage()">
-
-    <div class="welcome_message" id="overlay" onclick="hideOverlay()">
-        <div class="welcome_text">
-            <h1>Welcome to my Website</h1>
-            <h2>Click to enter</h2>
+<body>
+    <div class="m-scene" id="main" onclick="leaveStartPage()">
+        <div class="m-header scene_element scene_element--fadein">
+            <div class="welcome_message" id="overlay">
+                <div class="welcome_text">
+                    <h1>Welcome to my Website</h1>
+                    <h2>Click to enter</h2>
+                </div>
+            </div>
         </div>
     </div>
-
-    <div class="actual_page" id="underlay">
-        <div class="navbar">
-            <div class="navlink">
-                <a href="about.html">About Me</a>
-            </div>
-            <div class="navlink">
-                <a href="projects.html">Projects</a>
-            </div>
-        </div>
-        <div class="body_text">
-            <h1> welcome </h1>
-        </div>
-   </div>
 </body>
 </html>

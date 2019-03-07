@@ -1,3 +1,7 @@
+function leaveStartPage() {
+    document.location.href = "about.html"
+}
+
 function startPage() {
     main = document.getElementById("underlay");
     main.style.display = "none";
