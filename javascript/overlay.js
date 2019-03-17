@@ -1,3 +1,7 @@
+const swup = new Swup();
+
+console.log('test')
+
 function leaveStartPage() {
     document.location.href = "about.html"
 }

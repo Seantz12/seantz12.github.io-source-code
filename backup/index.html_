@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="styles/index_style.css">
+    <link rel="stylesheet" href="styles/page_transition.css">
+    <title>Welcome</title>
+</head>
+<body>
+    <main id="swup" class="transition-fade">
+        <div class="welcome_message" id="overlay">
+            <div class="welcome_text">
+                <h1>Welcome to my Website</h1>
+                <h2>Click to enter</h2>
+                <a href="about.html">Test</a>
+            </div>
+        </div>
+    </main>
+    <script src="javascript/swup.min.js"></script>
+    <script>
+        const swup = new Swup();
+        console.log('test');
+    </script>
+</body>
+</html>
