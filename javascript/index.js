@@ -1,7 +1,3 @@
-const swup = new Swup();
-
-console.log('test')
-
 function leaveStartPage() {
     document.location.href = "about.html"
 }
@@ -11,9 +7,9 @@ function startPage() {
     main.style.display = "none";
 }
 
-function hideOverlay() {
-    element = document.getElementById("overlay");
-    main = document.getElementById("underlay");
+function hideOverlay(fadeOutID, fadeInID) {
+    element = document.getElementById(fadeOutID);
+    main = document.getElementById(fadeInID);
     main.style.display = "block";
     main.style.opacity = 0;
     var op = 1;
@@ -27,4 +23,8 @@ function hideOverlay() {
         main.style.opacity = 1-op;
         op -= op * 0.2;
     }, 50);
+}
+
+function loadProjects() {
+
 }
