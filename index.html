@@ -9,7 +9,7 @@
 
 <div class="welcome_message" 
      id="overlay" 
-     onclick="hideOverlay('overlay', 'underlay')">
+     onclick="fadeOutAndIn('overlay', 'underlay')">
     <div class="welcome_text">
         <h1>Welcome to my Website</h1>
         <h2>Click to enter</h2>
@@ -29,8 +29,9 @@
         </div>
     </div>
     <div class="body_text">
-        <div id="homeText"><p>test</p></div>
-        <div id="aboutText" class="about_text"><p>about</p></div>
+        <div id="homeText" selected='true' style='display: block'><p>test</p></div>
+        <div id="aboutText" class="about_text" style='display: none'><p>about</p></div>
+        <div id="projectsText" class="projects_text" style='display: none'><p>projects</p></div>
     </div>
 </div>
 
