@@ -1,4 +1,5 @@
 const BODY_DIV_ELEMENTS = ['homeText', 'aboutText', 'projectsText'];
+const NAV_DIV_ELEMENTS = ['about', 'projects', 'home'];
 
 function leaveStartPage() {
     document.location.href = "about.html"
@@ -39,6 +40,7 @@ function loadProjects() {
             break;
         }
     }
+    highlightElement('projects')
 }
 
 function loadAboutMe() {
@@ -53,6 +55,7 @@ function loadAboutMe() {
             break;
         }
     }
+    highlightElement('about')
 }
 
 function loadHome() {
@@ -65,6 +68,19 @@ function loadHome() {
         if(html_element.style.display == 'block') {
             fadeOutAndIn(element, 'homeText');
             break;
+        }
+    }
+    highlightElement('home')
+}
+
+function highlightElement(element) {
+    for(var i = 0; i < NAV_DIV_ELEMENTS.length; i++) {
+        var curr = NAV_DIV_ELEMENTS[i];
+        var html_curr = document.getElementById(curr);
+        if(curr == element) {
+            html_curr.classList.add("highlighted");
+        } else {
+            html_curr.classList.remove("highlighted");
         }
     }
 }
