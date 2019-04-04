@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'Expressway';
+    src: url('fonts/expressway\ rg.ttf')
+}
+
 .welcome_message {
     font-family: "Courier New";
     position:fixed;
@@ -26,23 +31,19 @@ body {
 }
 
 .body_text {
+    font-family: 'Expressway';
     margin-top: 50px;
     position: absolute;
 }
 
 .home_text {
-    top: 20px;
-    z-index: 0;
+    font-size: 250%;
 }
 
 .projects_text {
-    top: 20px;
-    z-index: 1;
 }
 
 .about_text {
-    top: 20px;
-    z-index: 2;
 }
 
 .navbar {
