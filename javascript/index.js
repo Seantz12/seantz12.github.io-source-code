@@ -28,6 +28,35 @@ function fadeOutAndIn(fadeOutID, fadeInID) {
     }, 50);
 }
 
+function fadeOutThenIn(fadeOutId, fadeInId) {
+    element = document.getElementById(fadeOutId);
+    var op = 1;
+    var timer = setInterval(function () {
+        if(op <= 0.1) {
+            clearInterval(timer);
+            element.style.display = 'none';
+            fadeIn(fadeInId);
+        }
+        element.style.opacity = op;
+        op -= op * 0.2;
+    }, 50);
+}
+
+function fadeIn(fadeInId) {
+    element = document.getElementById(fadeInId);
+    op = 1;
+    element.style.opacity = 0;
+    var timer = setInterval(function () {
+        if(op <= 0.1) {
+            clearInterval(timer);
+        } else if(op == 0.8) { // Fixes flashing
+            element.style.display = "block";
+        }
+        element.style.opacity = 1-op;
+        op -= op * 0.2;
+    }, 50);
+}
+
 function loadProjects() {
     for(var i = 0; i < BODY_DIV_ELEMENTS.length; i++) {
         var element = BODY_DIV_ELEMENTS[i];
@@ -36,7 +65,7 @@ function loadProjects() {
         }
         var html_element = document.getElementById(element);
         if(html_element.style.display == 'block') {
-            fadeOutAndIn(element, 'projectsText');
+            fadeOutThenIn(element, 'projectsText');
             break;
         }
     }
@@ -51,7 +80,7 @@ function loadAboutMe() {
         }
         var html_element = document.getElementById(element);
         if(html_element.style.display == 'block') {
-            fadeOutAndIn(element, 'aboutText');
+            fadeOutThenIn(element, 'aboutText');
             break;
         }
     }
@@ -66,7 +95,7 @@ function loadHome() {
         }
         var html_element = document.getElementById(element);
         if(html_element.style.display == 'block') {
-            fadeOutAndIn(element, 'homeText');
+            fadeOutThenIn(element, 'homeText');
             break;
         }
     }
