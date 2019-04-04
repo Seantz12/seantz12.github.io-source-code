@@ -41,11 +41,6 @@ body {
     width: 100%;
 }
 
-table {
-    width: 100%;
-    z-index: -1;
-}
-
 .sean_method {
     display: table;
 }
