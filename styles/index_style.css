@@ -32,12 +32,27 @@ body {
 
 .body_text {
     font-family: 'Expressway';
-    margin-top: 50px;
     position: absolute;
+    margin-top: 30px;
 }
 
 .home_text {
     font-size: 250%;
+    width: 100%;
+}
+
+table {
+    width: 100%;
+    z-index: -1;
+}
+
+.sean_method {
+    display: table;
+}
+
+.home_text h1 {
+    margin: 0;
+    display: table;
 }
 
 .projects_text {
