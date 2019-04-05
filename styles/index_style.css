@@ -29,6 +29,7 @@ body {
     background-image: url("images/index_background.jpg");
     background-size: 100%;
     width: 100%;
+    overflow: hidden;
 }
 
 .actual_page {
@@ -63,7 +64,7 @@ body {
     text-align: center;
 }
 
-.projects_text div{
+.project {
     display: inline-block;
     text-align: center;
     width: 33%;
