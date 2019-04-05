@@ -1,6 +1,6 @@
 @font-face {
-    font-family: 'Expressway';
-    src: url('fonts/expressway\ rg.ttf')
+    font-family: "Expressway";
+    src: url("fonts/expressway\ rg.ttf");
 }
 
 .welcome_message {
@@ -26,12 +26,12 @@
 }
 
 body {
-    background-image: url(images/index_background.jpg);
+    background-image: url("images/index_background.jpg");
     background-size: 100%;
 }
 
 .body_text {
-    font-family: 'Expressway';
+    font-family: "Expressway";
     position: absolute;
     margin-top: 30px;
 }

@@ -1,5 +1,5 @@
-const BODY_DIV_ELEMENTS = ['homeText', 'aboutText', 'projectsText'];
-const NAV_DIV_ELEMENTS = ['about', 'projects', 'home'];
+const BODY_DIV_ELEMENTS = ["homeText", "aboutText", "projectsText"];
+const NAV_DIV_ELEMENTS = ["about", "projects", "home"];
 
 function leaveStartPage() {
     document.location.href = "about.html"
@@ -19,8 +19,8 @@ function fadeOutAndIn(fadeOutID, fadeInID) {
     var timer = setInterval(function () {
         if(op <= 0.1) {
             clearInterval(timer);
-            element.style.display = 'none';
-            main.style.display = 'block';
+            element.style.display = "none";
+            main.style.display = "block";
         }
         element.style.opacity = op;
         main.style.opacity = 1-op;
@@ -34,7 +34,7 @@ function fadeOutThenIn(fadeOutId, fadeInId) {
     var timer = setInterval(function () {
         if(op <= 0.1) {
             clearInterval(timer);
-            element.style.display = 'none';
+            element.style.display = "none";
             fadeIn(fadeInId);
         }
         element.style.opacity = op;
@@ -60,16 +60,16 @@ function fadeIn(fadeInId) {
 function loadProjects() {
     for(var i = 0; i < BODY_DIV_ELEMENTS.length; i++) {
         var element = BODY_DIV_ELEMENTS[i];
-        if(element == 'projectsText') {
+        if(element == "projectsText") {
             continue;
         }
         var html_element = document.getElementById(element);
-        if(html_element.style.display == 'block') {
-            fadeOutThenIn(element, 'projectsText');
+        if(html_element.style.display == "block") {
+            fadeOutThenIn(element, "projectsText");
             break;
         }
     }
-    highlightElement('projects')
+    highlightElement("projects")
 }
 
 function loadAboutMe() {
@@ -79,12 +79,12 @@ function loadAboutMe() {
             continue;
         }
         var html_element = document.getElementById(element);
-        if(html_element.style.display == 'block') {
-            fadeOutThenIn(element, 'aboutText');
+        if(html_element.style.display == "block") {
+            fadeOutThenIn(element, "aboutText");
             break;
         }
     }
-    highlightElement('about')
+    highlightElement("about")
 }
 
 function loadHome() {
@@ -94,12 +94,12 @@ function loadHome() {
             continue;
         }
         var html_element = document.getElementById(element);
-        if(html_element.style.display == 'block') {
-            fadeOutThenIn(element, 'homeText');
+        if(html_element.style.display == "block") {
+            fadeOutThenIn(element, "homeText");
             break;
         }
     }
-    highlightElement('home')
+    highlightElement("home")
 }
 
 function highlightElement(element) {
