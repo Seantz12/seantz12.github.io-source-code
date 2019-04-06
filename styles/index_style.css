@@ -99,6 +99,16 @@ body {
     width: 100%;
 }
 
+.navbar_icons {
+    position: fixed;
+    display: block;
+    float: left;
+    font-size: 45px;
+    color: #f2f2f2;
+    margin-left: 10px;
+    justify-content: space-between
+}
+
 .navlink p {
     font-family: "Courier New";
     float: right;
