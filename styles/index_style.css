@@ -27,8 +27,9 @@
 
 body {
     background-image: url("images/index_background.jpg");
-    background-size: 100%;
-    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     overflow: hidden;
 }
 
@@ -127,7 +128,7 @@ body {
 
 
 .navlink p {
-    font-family: "Courier New";
+    font-family: "Monospace";
     float: right;
     display: block;
     color: #f2f2f2;
