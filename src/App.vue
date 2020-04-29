@@ -1,15 +1,108 @@
 <template>
   <div id="app">
     <Navbar :navLinks="navLinks"/>
-    <Section anchor="introduction">
+    <Section class="first" anchor="introduction">
       <Introduction />
     </Section>
+    <p>emualte scroll</p>
+    <p>emualte scroll</p>
+    <p>emualte scroll</p>
+    <p>emualte scroll</p>
+    <p>emualte scroll</p>
+    <p>emualte scroll</p>
+    <p>emualte scroll</p>
+    <p>emualte scroll</p>
+    <p>emualte scroll</p>
+    <p>emualte scroll</p>
+    <p>emualte scroll</p>
+    <p>emualte scroll</p>
+    <p>emualte scroll</p>
+    <p>emualte scroll</p>
+    <p>emualte scroll</p>
+    <p>emualte scroll</p>
+    <p>emualte scroll</p>
+    <p>emualte scroll</p>
+    <p>emualte scroll</p>
+    <p>emualte scroll</p>
+    <p>emualte scroll</p>
+    <p>emualte scroll</p>
+    <p>emualte scroll</p>
+    <p>emualte scroll</p>
+    <p>emualte scroll</p>
+    <p>emualte scroll</p>
+    <p>emualte scroll</p>
+    <p>emualte scroll</p>
+    <p>emualte scroll</p>
+    <p>emualte scroll</p>
+    <p>emualte scroll</p>
+    <p>emualte scroll</p>
+    <p>emualte scroll</p>
+    <p>emualte scroll</p>
+    <p>emualte scroll</p>
+    <p>emualte scroll</p>
+    <p>emualte scroll</p>
     <Section anchor="details">
       <Details />
     </Section>
+    <p>emualte scroll</p>
+    <p>emualte scroll</p>
+    <p>emualte scroll</p>
+    <p>emualte scroll</p>
+    <p>emualte scroll</p>
+    <p>emualte scroll</p>
+    <p>emualte scroll</p>
+    <p>emualte scroll</p>
+    <p>emualte scroll</p>
+    <p>emualte scroll</p>
+    <p>emualte scroll</p>
+    <p>emualte scroll</p>
+    <p>emualte scroll</p>
+    <p>emualte scroll</p>
+    <p>emualte scroll</p>
+    <p>emualte scroll</p>
+    <p>emualte scroll</p>
+    <p>emualte scroll</p>
     <Section anchor="projects">
       <Projects />
     </Section>
+    <p>emualte scroll</p>
+    <p>emualte scroll</p>
+    <p>emualte scroll</p>
+    <p>emualte scroll</p>
+    <p>emualte scroll</p>
+    <p>emualte scroll</p>
+    <p>emualte scroll</p>
+    <p>emualte scroll</p>
+    <p>emualte scroll</p>
+    <p>emualte scroll</p>
+    <p>emualte scroll</p>
+    <p>emualte scroll</p>
+    <p>emualte scroll</p>
+    <p>emualte scroll</p>
+    <p>emualte scroll</p>
+    <p>emualte scroll</p>
+    <p>emualte scroll</p>
+    <p>emualte scroll</p>
+    <p>emualte scroll</p>
+    <p>emualte scroll</p>
+    <p>emualte scroll</p>
+    <p>emualte scroll</p>
+    <p>emualte scroll</p>
+    <p>emualte scroll</p>
+    <p>emualte scroll</p>
+    <p>emualte scroll</p>
+    <p>emualte scroll</p>
+    <p>emualte scroll</p>
+    <p>emualte scroll</p>
+    <p>emualte scroll</p>
+    <p>emualte scroll</p>
+    <p>emualte scroll</p>
+    <p>emualte scroll</p>
+    <p>emualte scroll</p>
+    <p>emualte scroll</p>
+    <p>emualte scroll</p>
+    <p>emualte scroll</p>
+    <p>emualte scroll</p>
 
   </div>
 </template>
@@ -49,6 +142,17 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+}
+
+body {
+  background-color: #4276c9;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.first {
+  margin-top: 80px;
 }
 </style>
