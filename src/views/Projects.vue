@@ -1,23 +1,24 @@
 <template>
-    <div class="navbar">
-        <a v-for="(link, key) in this.navLinks" :key="key" :href="link">{{key}}</a>
+    <div class="projects">
+        {{projects.project1}}
     </div>
 </template>
 
 <script>
 export default {
-    name: "navbar",
+    name: "projects",
     data: function () {
         return { 
-
+            projects: {
+                project1: "asd"
+            }
         };
-    },
-    props: ['navLinks']
+    }
 }
 </script>
 
 <style scoped>
-.navbar {
+.projects {
     display: flex;
 }
 </style>
