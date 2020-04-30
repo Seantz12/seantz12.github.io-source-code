@@ -47,10 +47,34 @@ export default {
             workExperiences: [
                 {
                     name: "Polar",
+                    location: "Toronto, Ontario",
+                    description: "Software Developer/Tester Reliability and Auto",
                     dateStarted: "January 2019",
-                    dateEnded: "April 2019",
-                    description: "blah blah",
-                    highlights: ["blah blah 1", "blah blah 2"]
+                    dateEnded: "June 2019",
+                    highlights: ["Used Jinja2 and Selenium libraries to develop automated tests for a large website", 
+                                 "Combined Django with SimpleHTTPServer to automate testing unique situations that were client specific",
+                                 "Documented and communicated feedback with developers in an effective manner",
+                                 "Continued working remotely after coop placement to ensure quality was maintained"]
+                },
+                {
+                    name: "360Insights",
+                    location: "Whitby, Ontario",
+                    description: "Full Stack Developer",
+                    dateStarted: "September 2019",
+                    dateEnded: "December 2019",
+                    highlights: ["Developed additional features to help the end user use 360Insights' platform",
+                                 "Worked with Node.js and Rabbit.mq to communicate changes between two sites seamlessly",
+                                 "Overhauled and refactored an entire website to use an updated version of React"]
+                },
+                {
+                    name: "MCAP",
+                    location: "Waterloo, Ontario",
+                    description: "Junior Systems Administrator",
+                    dateStarted: "May 2018",
+                    dateEnded: "August 2018",
+                    highlights: ["Scripted and automated daily tasks to make workflow more efficient",
+                                 "Communicated feedback effectively with users about technical issues and concerns",
+                                 "Demonstrated initiative to take on additional projects"]
                 }
             ]
         };

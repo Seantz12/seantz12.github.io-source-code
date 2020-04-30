@@ -4,106 +4,12 @@
     <Section class="first" anchor="introduction">
       <Introduction />
     </Section>
-    <p>emualte scroll</p>
-    <p>emualte scroll</p>
-    <p>emualte scroll</p>
-    <p>emualte scroll</p>
-    <p>emualte scroll</p>
-    <p>emualte scroll</p>
-    <p>emualte scroll</p>
-    <p>emualte scroll</p>
-    <p>emualte scroll</p>
-    <p>emualte scroll</p>
-    <p>emualte scroll</p>
-    <p>emualte scroll</p>
-    <p>emualte scroll</p>
-    <p>emualte scroll</p>
-    <p>emualte scroll</p>
-    <p>emualte scroll</p>
-    <p>emualte scroll</p>
-    <p>emualte scroll</p>
-    <p>emualte scroll</p>
-    <p>emualte scroll</p>
-    <p>emualte scroll</p>
-    <p>emualte scroll</p>
-    <p>emualte scroll</p>
-    <p>emualte scroll</p>
-    <p>emualte scroll</p>
-    <p>emualte scroll</p>
-    <p>emualte scroll</p>
-    <p>emualte scroll</p>
-    <p>emualte scroll</p>
-    <p>emualte scroll</p>
-    <p>emualte scroll</p>
-    <p>emualte scroll</p>
-    <p>emualte scroll</p>
-    <p>emualte scroll</p>
-    <p>emualte scroll</p>
-    <p>emualte scroll</p>
-    <p>emualte scroll</p>
     <Section anchor="details">
       <Details />
     </Section>
-    <p>emualte scroll</p>
-    <p>emualte scroll</p>
-    <p>emualte scroll</p>
-    <p>emualte scroll</p>
-    <p>emualte scroll</p>
-    <p>emualte scroll</p>
-    <p>emualte scroll</p>
-    <p>emualte scroll</p>
-    <p>emualte scroll</p>
-    <p>emualte scroll</p>
-    <p>emualte scroll</p>
-    <p>emualte scroll</p>
-    <p>emualte scroll</p>
-    <p>emualte scroll</p>
-    <p>emualte scroll</p>
-    <p>emualte scroll</p>
-    <p>emualte scroll</p>
-    <p>emualte scroll</p>
     <Section anchor="projects">
       <Projects />
     </Section>
-    <p>emualte scroll</p>
-    <p>emualte scroll</p>
-    <p>emualte scroll</p>
-    <p>emualte scroll</p>
-    <p>emualte scroll</p>
-    <p>emualte scroll</p>
-    <p>emualte scroll</p>
-    <p>emualte scroll</p>
-    <p>emualte scroll</p>
-    <p>emualte scroll</p>
-    <p>emualte scroll</p>
-    <p>emualte scroll</p>
-    <p>emualte scroll</p>
-    <p>emualte scroll</p>
-    <p>emualte scroll</p>
-    <p>emualte scroll</p>
-    <p>emualte scroll</p>
-    <p>emualte scroll</p>
-    <p>emualte scroll</p>
-    <p>emualte scroll</p>
-    <p>emualte scroll</p>
-    <p>emualte scroll</p>
-    <p>emualte scroll</p>
-    <p>emualte scroll</p>
-    <p>emualte scroll</p>
-    <p>emualte scroll</p>
-    <p>emualte scroll</p>
-    <p>emualte scroll</p>
-    <p>emualte scroll</p>
-    <p>emualte scroll</p>
-    <p>emualte scroll</p>
-    <p>emualte scroll</p>
-    <p>emualte scroll</p>
-    <p>emualte scroll</p>
-    <p>emualte scroll</p>
-    <p>emualte scroll</p>
-    <p>emualte scroll</p>
-    <p>emualte scroll</p>
-
   </div>
 </template>
 
@@ -144,6 +50,7 @@ export default {
   color: #2c3e50;
   left: 0;
   width: 100%;
+  margin-left: 0px;
   /* background-color: white; */
 }
 
@@ -157,6 +64,8 @@ body::-webkit-scrollbar {
 }
 
 .first {
-  margin-top: 60px;
+  margin-top: 48px;
+  width: 100%;
+  background-color: lightblue;
 }
 </style>
