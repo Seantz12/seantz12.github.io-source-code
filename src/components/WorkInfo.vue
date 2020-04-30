@@ -1,6 +1,14 @@
 <template>
     <div>
-        <p> haha funny work goes here </p>
+        <p>{{info.name}}</p>
+        <p>{{info.dateStarted}}</p>
+        <p>{{info.dateEnded}}</p>
+        <p>{{info.description}}</p>
+        <ul>
+            <li v-for="(highlight, key) in info.highlights" :key="key">
+                {{highlight}}
+            </li>
+        </ul>
     </div>
 </template>
 
@@ -11,7 +19,8 @@ export default {
         return { 
 
         };
-    }
+    },
+    props: ['info']
 }
 </script>
 

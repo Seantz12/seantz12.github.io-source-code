@@ -27,7 +27,7 @@
                 </ul>
             </div>
         </div>
-        <WorkInfo/>
+        <WorkInfo v-for="(info, key) in workExperiences" :info="info" :key="key"/>
     </div>
 </template>
 
@@ -43,7 +43,16 @@ export default {
         return {
             professionalExperience: ['Git', 'Python', 'Django', 'Javascript', 'Node.js', 'React.js', 'MySQL', 'SQLite'],
             proficient: ['C/C++', 'Java', 'Bash'],
-            learning: ['Rust', 'Lua/Love2d', 'Vue.js']
+            learning: ['Rust', 'Lua/Love2d', 'Vue.js'],
+            workExperiences: [
+                {
+                    name: "Polar",
+                    dateStarted: "January 2019",
+                    dateEnded: "April 2019",
+                    description: "blah blah",
+                    highlights: ["blah blah 1", "blah blah 2"]
+                }
+            ]
         };
     }
 }
