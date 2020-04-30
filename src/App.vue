@@ -142,10 +142,14 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  left: 0;
+  width: 100%;
+  /* background-color: white; */
 }
 
 body {
-  background-color: #4276c9;
+  background-color: white;
+  margin: 0px;
 }
 
 body::-webkit-scrollbar {
@@ -153,6 +157,6 @@ body::-webkit-scrollbar {
 }
 
 .first {
-  margin-top: 80px;
+  margin-top: 60px;
 }
 </style>

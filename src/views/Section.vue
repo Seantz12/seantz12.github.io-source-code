@@ -1,8 +1,9 @@
 <template>
-    <div>
+    <div class="wrap">
         <a :id="this.anchor"/>
         <slot></slot>
         <a href="#top"> go back to top </a>
+        <hr/>
     </div>
 </template>
 
@@ -13,5 +14,8 @@ export default {
 }
 </script>
 <style scoped>
-
+.wrap {
+    margin-left: 5px;
+    margin-right: 5px;
+}
 </style>

@@ -40,6 +40,7 @@ export default {
 }
 
 .nav-list {
+    margin-top: 0px;
     padding-top: 15px;
     padding-bottom: 15px;
     background-color: rgba(62, 67, 74, .5);
