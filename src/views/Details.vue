@@ -87,8 +87,16 @@ export default {
 }
 .row div {
     display:inline-block;
-    width: 33%;
+    width: 50%;
     text-align: center;
+    border-style: solid solid solid none;
     /* margin: 30px; */
+}
+.row .learning {
+    border-style: solid none solid none;
+}
+.row ul {
+    text-align: left;
+    /* margin: 0px; */
 }
 </style>

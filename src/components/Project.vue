@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div :style='style'>
         <!-- add image -->
         <p>{{info.name}}</p>
         <p>{{info.description}}</p>
@@ -9,6 +9,11 @@
 <script>
 export default {
     name: "project",
+    computed: {
+        style() {
+            return 'text-align: ' + this.info.align + '; margin-' + this.info.align + ': 5px;';
+        }
+    },
     data: function () {
         return { 
 
@@ -19,5 +24,4 @@ export default {
 </script>
 
 <style scoped>
-
 </style>
