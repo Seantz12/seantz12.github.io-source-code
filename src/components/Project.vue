@@ -1,16 +1,21 @@
 <template>
     <div class="project">
         <div class="image" v-if="info.align == 'right'" style='text-align: left'>
-            <img :src="info.imagePath"/>
+            <a :href="info.url">
+                <img :src="info.imagePath"/>
+            </a>
         </div>
         <div class="text-parent" :style='textStyle'>
             <div class="text">
                 <h2>{{info.name}}</h2>
                 <p>{{info.description}}</p>
+                <a :href="info.url">Github Repo</a>
             </div>
         </div>
         <div class="image" v-if="info.align == 'left'" style='text-align: right'>
-            <img :src="info.imagePath"/>
+            <a :href="info.url">
+                <img :src="info.imagePath"/>
+            </a>
         </div>
     </div>
 </template>
