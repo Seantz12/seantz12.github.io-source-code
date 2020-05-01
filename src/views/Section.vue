@@ -14,8 +14,7 @@ export default {
 }
 </script>
 <style scoped>
-.wrap {
-    /* margin-left: 5px;
-    margin-right: 5px; */
+hr {
+    margin-bottom: 0px;
 }
 </style>

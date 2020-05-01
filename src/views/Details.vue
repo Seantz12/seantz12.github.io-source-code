@@ -1,6 +1,13 @@
 <template>
-    <div>
-        <div class="row">
+<div>
+    <!-- <h1> Details </h1> -->
+    <div class="root">
+        <div class="work">
+            <h1> Work Experience </h1>
+            <WorkInfo v-for="(info, key) in workExperiences" :info="info" :key="key"/>
+        </div>
+        <div class="knowledge">
+            <h1> Languages </h1>
             <!--TODO: Add images-->
             <div class="pro-work">
                 Professionaly Worked with:
@@ -27,8 +34,9 @@
                 </ul>
             </div>
         </div>
-        <WorkInfo v-for="(info, key) in workExperiences" :info="info" :key="key"/>
+
     </div>
+</div>
 </template>
 
 <script>
@@ -82,20 +90,26 @@ export default {
 }
 </script>
 <style scoped>
-.row {
+.root {
     display: flex;
 }
-.row div {
-    display:inline-block;
-    width: 50%;
+.work {
+    width: 75%;
+}
+.knowledge {
+    width: 25%;
+    /* display: flex; */
+}
+.knowledge div {
+    /* display:inline-block; */
     text-align: center;
-    border-style: solid solid solid none;
+    border-style: none none solid solid;
     /* margin: 30px; */
 }
-.row .learning {
-    border-style: solid none solid none;
+.knowledge .pro-work {
+    border-style: solid none solid solid;
 }
-.row ul {
+.knowledge ul {
     text-align: left;
     /* margin: 0px; */
 }

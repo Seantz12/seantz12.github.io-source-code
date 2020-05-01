@@ -1,5 +1,6 @@
 <template>
     <div class="projects">
+        <h1> Projects </h1>
         <Project v-for="(project, key) in projects" :key="key" :info="project"/>
         <!-- {{projects.project1}} -->
     </div>
@@ -43,4 +44,7 @@ export default {
 </script>
 
 <style scoped>
+h1 {
+    margin-top: 0px;
+}
 </style>

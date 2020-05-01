@@ -1,13 +1,13 @@
 <template>
   <div id="app">
     <Navbar :navLinks="navLinks"/>
-    <Section class="first" anchor="introduction">
+    <Section class="intro" anchor="introduction">
       <Introduction />
     </Section>
-    <Section anchor="details">
+    <Section class="details" anchor="details">
       <Details />
     </Section>
-    <Section anchor="projects">
+    <Section class="projects" anchor="projects">
       <Projects />
     </Section>
   </div>
@@ -48,8 +48,10 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  top: 0;
   left: 0;
   width: 100%;
+  height: 100%;
   margin-left: 0px;
   /* background-color: white; */
 }
@@ -63,9 +65,18 @@ body::-webkit-scrollbar {
   display: none;
 }
 
-.first {
-  margin-top: 48px;
+.intro {
   width: 100%;
   background-color: lightblue;
+}
+
+.details {
+  width: 100%;
+  background-color: lightgreen;
+}
+
+.projects {
+  width: 100%;
+  background-color: lightyellow;
 }
 </style>

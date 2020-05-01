@@ -31,10 +31,10 @@ export default {
 
 <style scoped>
 .navbar {
-    width: 100%;
+    /* width: 100%; */
     position: fixed;
     top: 0;
-    left: 0;
+    right: 0;
     text-align: right;
     margin-top: 0px;
 }
@@ -46,18 +46,21 @@ export default {
     background-color: rgba(62, 67, 74, .5);
 }
 
-.selected {
+/* .selected {
     color: white;
     background-color: green;
-}
+} */
 
 .nav-item {
-    display: inline;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    list-style: none;
 }
 
 .nav-link {
     padding: 15px;
     color: black;
+    margin-left: -25px;
     /* background-color: black; */
     /* text-align: right; */
 }
