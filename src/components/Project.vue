@@ -34,6 +34,7 @@ export default {
 <style scoped>
 .project {
     display: flex;
+    justify-content: space-between;
     width: 100%;
     border-style: none none solid none;
 }
