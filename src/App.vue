@@ -4,12 +4,12 @@
     <Section class="intro" anchor="introduction">
       <Introduction />
     </Section>
-    <Section class="details" anchor="details">
+    <!-- <Section class="details" anchor="details">
       <Details />
     </Section>
     <Section class="projects" anchor="projects">
       <Projects />
-    </Section>
+    </Section> -->
   </div>
 </template>
 
@@ -46,37 +46,10 @@ export default {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  margin-left: 0px;
-  /* background-color: white; */
-}
-
-body {
-  background-color: white;
-  margin: 0px;
-}
-
-body::-webkit-scrollbar {
-  display: none;
 }
 
 .intro {
-  width: 100%;
-  background-color: lightblue;
+  background-color: darkblue;
 }
 
-.details {
-  width: 100%;
-  background-color: lightgreen;
-}
-
-.projects {
-  width: 100%;
-  background-color: lightyellow;
-}
 </style>

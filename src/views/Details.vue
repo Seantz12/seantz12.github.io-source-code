@@ -49,20 +49,19 @@ export default {
     },
     data: function() {
         return {
-            professionalExperience: ['Git', 'Python', 'Django', 'Javascript', 'Node.js', 'React.js', 'MySQL', 'SQLite'],
-            proficient: ['C/C++', 'Java', 'Bash'],
+            professionalExperience: ['Git', 'Python', 'Django', 'Javascript', 'Node.js', 'React.js', 'MySQL', 'SQLite', 'C++', 'Unreal Engine 4'],
+            proficient: ['C', 'Java', 'Bash', 'C#'],
             learning: ['Rust', 'Lua/Love2d', 'Vue.js'],
             workExperiences: [
                 {
-                    name: "Polar",
-                    location: "Toronto, Ontario",
-                    description: "Software Developer/Tester Reliability and Auto",
-                    dateStarted: "January 2019",
-                    dateEnded: "June 2019",
-                    highlights: ["Used Jinja2 and Selenium libraries to develop automated tests for a large website", 
-                                 "Combined Django with SimpleHTTPServer to automate testing unique situations that were client specific",
-                                 "Documented and communicated feedback with developers in an effective manner",
-                                 "Continued working remotely after coop placement to ensure quality was maintained"]
+                    name: "Behaviour Interactive",
+                    location: "Monteral, Quebec",
+                    description: "Game Programmer",
+                    dateStarted: "June 2020",
+                    dateEnded: "August 2020",
+                    highlights: ["Worked with Unreal Engine 4 to implement useful tools",
+                                 "Provided solutions with C++ for customer requested features in game",
+                                 "Added additional features to a growing node.js backend"]
                 },
                 {
                     name: "360Insights",
@@ -73,6 +72,17 @@ export default {
                     highlights: ["Developed additional features to help the end user use 360Insights' platform",
                                  "Worked with Node.js and Rabbit.mq to communicate changes between two sites seamlessly",
                                  "Overhauled and refactored an entire website to use an updated version of React"]
+                },
+                {
+                    name: "Polar",
+                    location: "Toronto, Ontario",
+                    description: "Software Developer/Tester Reliability and Auto",
+                    dateStarted: "January 2019",
+                    dateEnded: "June 2019",
+                    highlights: ["Used Jinja2 and Selenium libraries to develop automated tests for a large website", 
+                                 "Combined Django with SimpleHTTPServer to automate testing unique situations that were client specific",
+                                 "Documented and communicated feedback with developers in an effective manner",
+                                 "Continued working remotely after coop placement to ensure quality was maintained"]
                 },
                 {
                     name: "MCAP",
