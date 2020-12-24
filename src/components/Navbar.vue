@@ -1,15 +1,22 @@
 <template>
-    <div class="navbar">
-        <ul class="nav-list">
-            <li class="nav-item" v-for="(link, key) in this.navLinks" :key="key">
-                <a :class="['nav-link', key == selected ? 'selected' : '']" 
-                   :href="link"
-                   @click="selectKey(key)">
-                    {{key}}
-                </a>
-            </li>
-        </ul>
-    </div>
+  <b-navbar toggleable type="dark" variant="dark" sticky="true">
+    <b-navbar-brand href="#">Sean Zhou</b-navbar-brand>
+
+    <b-navbar-toggle target="navbar-toggle-collapse">
+      <template #default="{ expanded }">
+        <b-icon v-if="expanded" icon="chevron-bar-up"></b-icon>
+        <b-icon v-else icon="chevron-bar-down"></b-icon>
+      </template>
+    </b-navbar-toggle>
+
+    <b-collapse id="navbar-toggle-collapse" is-nav>
+      <b-navbar-nav class="ml-auto">
+        <b-nav-item href="#">Intro</b-nav-item>
+        <b-nav-item href="#">Projects</b-nav-item>
+        <b-nav-item href="#" disabled>Disabled</b-nav-item>
+      </b-navbar-nav>
+    </b-collapse>
+  </b-navbar>
 </template>
 
 <script>
@@ -30,43 +37,5 @@ export default {
 </script>
 
 <style scoped>
-.navbar {
-    /* width: 100%; */
-    position: fixed;
-    top: 0;
-    right: 0;
-    text-align: right;
-    margin-top: 0px;
-}
 
-.nav-list {
-    margin-top: 0px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    background-color: rgba(62, 67, 74, .5);
-}
-
-/* .selected {
-    color: white;
-    background-color: green;
-} */
-
-.nav-item {
-    padding-top: 5px;
-    padding-bottom: 5px;
-    list-style: none;
-}
-
-.nav-link {
-    padding: 15px;
-    color: black;
-    margin-left: -25px;
-    /* background-color: black; */
-    /* text-align: right; */
-}
-.nav-link:hover {
-    color: white;
-    background-color: black;
-    /* text-align: right; */
-}
 </style>

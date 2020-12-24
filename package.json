@@ -8,6 +8,8 @@
     "webpack-build": "webpack --config build/webpack.config.dev.js"
   },
   "dependencies": {
+    "bootstrap": "^4.5.3",
+    "bootstrap-vue": "^2.21.1",
     "vue": "^2.6.11",
     "vue-material": "^1.0.0-beta-12"
   },
