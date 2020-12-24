@@ -2,16 +2,14 @@
   <div id="app">
     <Navbar :navLinks="navLinks"/>
     <div class="intro">
-    <!-- <Section class="intro" anchor="introduction"> -->
       <Introduction />
     </div>
-    <!-- </Section> -->
     <Section class="details" anchor="details">
       <Details />
     </Section>
-    <!--  <Section class="projects" anchor="projects">
+    <Section class="projects" anchor="projects">
       <Projects />
-    </Section> -->
+    </Section> 
   </div>
 </template>
 

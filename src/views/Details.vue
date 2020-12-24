@@ -6,35 +6,6 @@
         <b-card-group deck>
             <WorkInfo v-for="(info, key) in workExperiences" :info="info" :key="key"/>
         </b-card-group>
-        <!-- <div class="knowledge">
-            <h1> Languages </h1>
-            TODO: Add images
-            <div class="pro-work">
-                Professionaly Worked with:
-                <ul>
-                    <li v-for="(tool, key) in professionalExperience" :key="key"> 
-                        {{tool}} 
-                    </li>
-                </ul>
-            </div>
-            <div class="proficient">
-                Proficient in:
-                <ul>
-                    <li v-for="(tool, key) in proficient" :key="key"> 
-                        {{tool}} 
-                    </li>
-                </ul>
-            </div>
-            <div class="learning">
-                Currently learning:
-                <ul>
-                    <li v-for="(tool, key) in learning" :key="key"> 
-                        {{tool}} 
-                    </li>
-                </ul>
-            </div>
-        </div>
- -->
     </div>
 </div>
 </template>

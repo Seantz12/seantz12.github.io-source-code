@@ -1,7 +1,9 @@
 <template>
     <div class="projects">
-        <h1> Projects </h1>
-        <Project v-for="(project, key) in projects" :key="key" :info="project"/>
+        <h1 style="text-align: center;"> Projects </h1>
+        <b-card-group deck>
+            <Project v-for="(project, key) in projects" :key="key" :info="project"/>
+        </b-card-group>
     </div>
 </template>
 
