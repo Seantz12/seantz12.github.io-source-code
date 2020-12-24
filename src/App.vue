@@ -1,13 +1,15 @@
 <template>
   <div id="app">
     <Navbar :navLinks="navLinks"/>
-    <Section class="intro" anchor="introduction">
+    <div class="intro">
+    <!-- <Section class="intro" anchor="introduction"> -->
       <Introduction />
-    </Section>
-    <!-- <Section class="details" anchor="details">
+    </div>
+    <!-- </Section> -->
+    <Section class="details" anchor="details">
       <Details />
     </Section>
-    <Section class="projects" anchor="projects">
+    <!--  <Section class="projects" anchor="projects">
       <Projects />
     </Section> -->
   </div>
@@ -50,6 +52,8 @@ export default {
 
 .intro {
   background-color: darkblue;
+  padding-top: 100px;
+  border-bottom: 1px black;
 }
 
 </style>

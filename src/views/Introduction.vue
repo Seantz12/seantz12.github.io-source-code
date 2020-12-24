@@ -38,6 +38,10 @@ div {
     margin-right: 15%;
 }
 
+b-card {
+    margin-top: 10px;
+}
+
 /* h1 {
     margin-top: 0px;
 } */

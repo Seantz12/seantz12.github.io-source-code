@@ -23,11 +23,6 @@
 <script>
 export default {
     name: "project",
-    computed: {
-        textStyle() {
-            return 'text-align: ' + this.info.align + '; margin-' + this.info.align + ': 5px;';
-        },
-    },
     data: function () {
         return { 
         };

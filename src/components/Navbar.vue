@@ -1,5 +1,5 @@
 <template>
-  <b-navbar toggleable type="dark" variant="dark">
+  <b-navbar toggleable type="dark" variant="dark" sticky="true">
     <b-navbar-brand href="#">Sean Zhou</b-navbar-brand>
 
     <b-navbar-toggle target="navbar-toggle-collapse">

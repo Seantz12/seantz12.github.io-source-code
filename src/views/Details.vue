@@ -2,13 +2,13 @@
 <div>
     <!-- <h1> Details </h1> -->
     <div class="root">
-        <div class="work">
-            <h1> Work Experience </h1>
+        <h1> Work Experience </h1>
+        <b-card-group deck>
             <WorkInfo v-for="(info, key) in workExperiences" :info="info" :key="key"/>
-        </div>
-        <div class="knowledge">
+        </b-card-group>
+        <!-- <div class="knowledge">
             <h1> Languages </h1>
-            <!--TODO: Add images-->
+            TODO: Add images
             <div class="pro-work">
                 Professionaly Worked with:
                 <ul>
@@ -34,7 +34,7 @@
                 </ul>
             </div>
         </div>
-
+ -->
     </div>
 </div>
 </template>
@@ -55,6 +55,8 @@ export default {
             workExperiences: [
                 {
                     name: "Behaviour Interactive",
+                    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Behaviour_Interactive_logo.svg/1200px-Behaviour_Interactive_logo.svg.png",
+                    id: "bhvr",
                     location: "Monteral, Quebec",
                     description: "Game Programmer",
                     dateStarted: "June 2020",
@@ -65,6 +67,8 @@ export default {
                 },
                 {
                     name: "360Insights",
+                    image: "https://static1.squarespace.com/static/588259e5893fc087ee049fb8/t/5c1fa84e40ec9abd16b86ffd/1545578575822/360insights.png?format=1500w",
+                    id: "360",
                     location: "Whitby, Ontario",
                     description: "Full Stack Developer",
                     dateStarted: "September 2019",
@@ -75,6 +79,8 @@ export default {
                 },
                 {
                     name: "Polar",
+                    image: "https://m32connect.com/wp-content/uploads/2019/02/polar-2.jpg",
+                    id: "polar",
                     location: "Toronto, Ontario",
                     description: "Software Developer/Tester Reliability and Auto",
                     dateStarted: "January 2019",
@@ -86,6 +92,8 @@ export default {
                 },
                 {
                     name: "MCAP",
+                    image: "https://www.yourmortgageyourchoice.ca/wp-content/uploads/sites/95/2017/06/MCAP-Logo.jpg",
+                    id: "mcap",
                     location: "Waterloo, Ontario",
                     description: "Junior Systems Administrator",
                     dateStarted: "May 2018",
@@ -101,26 +109,6 @@ export default {
 </script>
 <style scoped>
 .root {
-    display: flex;
-}
-.work {
-    width: 75%;
-}
-.knowledge {
-    width: 25%;
-    /* display: flex; */
-}
-.knowledge div {
-    /* display:inline-block; */
     text-align: center;
-    border-style: none none solid solid;
-    /* margin: 30px; */
-}
-.knowledge .pro-work {
-    border-style: solid none solid solid;
-}
-.knowledge ul {
-    text-align: left;
-    /* margin: 0px; */
 }
 </style>
