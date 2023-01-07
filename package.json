@@ -14,7 +14,7 @@
     "vue-material": "^1.0.0-beta-12"
   },
   "devDependencies": {
-    "@vue/cli-service": "~4.3.0",
+    "@vue/cli-service": "~5.0.8",
     "vue-template-compiler": "^2.6.11",
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.11"
